@@ -1,24 +1,12 @@
-# README
+## Mateusz Kacprzak (zaliczenie)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+| Wersja Ruby   | Wersja Rails  |                Baza danych                 | Framework |
+| ------------- |:-------------:|:-------------------------------------------|:---------:|
+| 2.3.3         | 5.0.1         | SQLite - lokalnie<br />PostgreSQL - Heroku | Bootstrap |
 
-Things you may want to cover:
+:white_check_mark: [link do wdrożonej na zewnętrznym serwerze aplikacji](https://radiant-springs-24519.herokuapp.com)
 
-* Ruby version
+### Temat: Message application
 
-* System dependencies
+Aplikacja pozwalająca na dodawanie do bazy danych wiadomości i wyświetlanie ich.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
