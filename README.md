@@ -4,7 +4,7 @@
 | ------------- |:-------------:|:-------------------------------------------|:---------:|
 | 2.3.3         | 5.0.1         | SQLite - lokalnie<br />PostgreSQL - Heroku | Bootstrap |
 
-:white_check_mark: [link do wdrożonej na zewnętrznym serwerze aplikacji]()
+:white_check_mark: [link do wdrożonej na zewnętrznym serwerze aplikacji](http://serene-spire-89656.herokuapp.com)
 
 ### Temat: Message application
 
