@@ -1,6 +1,10 @@
 <h2> <%=  @message.title %></h2>
 <p>Posted by <%= @message.user.email %> <%= time_ago_in_words(@message.created_at)  %> ago</p>
 <p><%= @message.description %></p>
-<%= link_to "Edit", edit_message_path(@message) %>
+<% if user_signed_in? %>
+<% if @message.user.id == current_user.id %>
+    <%= link_to "Edit", edit_message_path(@message) %>
 <%= link_to "Delete", message_path(@message), method: :delete, data: { confirm: "Are you sure?" } %>
+    <% end %>
+    <% end %>
 <%= link_to "Back", root_path %>
