@@ -31,6 +31,9 @@ class MessagesController < ApplicationController
   end
 
   def destroy
+    if current_user.id != @message.user.id
+      redirect_to root_path
+    end
     @message.destroy
     redirect_to root_path
   end
