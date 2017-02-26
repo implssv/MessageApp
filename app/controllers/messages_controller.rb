@@ -23,6 +23,11 @@ class MessagesController < ApplicationController
   end
 
   def edit
+    if current_user.id != @message.user.id
+
+      redirect_to root_path
+
+    end
   end
 
   def destroy
