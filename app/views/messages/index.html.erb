@@ -2,7 +2,7 @@
 <% @messages.each do |m| %>
 
     <div class="col-md-4 col-sm-4" style="background: gainsboro;border: 5px solid beige;min-height: ">
-<div class="col-sm-12">
+<div class="col-sm-12" style="word-wrap: break-word; ">
 
     <h2><%= m.title %></h2>
     <%= link_to "View Message", message_path(m), class: "btn btn-default btn-sm pull-right", style: "margin-bottom:5px;"%>
