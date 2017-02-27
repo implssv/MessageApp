@@ -10,6 +10,9 @@ class MessagesController < ApplicationController
   end
 
   def new
+    if current_user.id != 1
+      redirect_to root_path
+    end
     @message = current_user.messages.build
   end
 
