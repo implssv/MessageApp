@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9099ce9c-54db-4945-bb35-b8f31f90abb1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/messages/index.html.erb" afterPath="$PROJECT_DIR$/app/views/messages/index.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -77,8 +75,10 @@
         <entry file="file://$PROJECT_DIR$/app/views/messages/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="62" lean-forward="false" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
-              <folding />
+              <caret line="2" column="79" lean-forward="false" selection-start-line="2" selection-start-column="79" selection-end-line="2" selection-end-column="79" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -485,12 +485,12 @@
       <workItem from="1487717562577" duration="2457000" />
       <workItem from="1487754695869" duration="1461000" />
       <workItem from="1487780908778" duration="9758000" />
-      <workItem from="1488140671291" duration="8668000" />
+      <workItem from="1488140671291" duration="8857000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22344000" />
+    <option name="totallyTimeSpent" value="22533000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -769,8 +769,10 @@
     <entry file="file://$PROJECT_DIR$/app/views/messages/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="62" lean-forward="false" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
-          <folding />
+          <caret line="2" column="79" lean-forward="false" selection-start-line="2" selection-start-column="79" selection-end-line="2" selection-end-column="79" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
