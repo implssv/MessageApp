@@ -1,19 +1,13 @@
-<div class="flex">
+
 <% @messages.each do |m| %>
 
-    <div class="col-lg-3 rounded" style="background: gainsboro;margin-left:3px;margin-top:3px;border: 5px solid beige;">
-      <div class="col-md-12" style="">
+    <div class="col-md-4" style="background: gainsboro;border: 5px solid beige;">
+
 
     <h2><%= m.title %></h2>
     <%= link_to "View Message", message_path(m), class: "btn btn-default btn-sm pull-right", style: "margin-bottom:5px;"%>
 
-      </div>
+
     </div>
 <% end %>
 
-</div>
-<script type="text/javascript">
-    $(function() {
-        $(".flex").flex();
-    });
-</script>
