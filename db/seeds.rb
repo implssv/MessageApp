@@ -8,8 +8,8 @@
 
 100.times do
   Message.create([{
-                      title: Faker::Lorem.sentence(3, false, 4),
-                      description: Faker::Lorem.paragraphs,
+                      title: Faker::Hipster.sentence(3),
+                      description: Faker::Hipster.paragraph,
                       user_id: 1
 
                   }])

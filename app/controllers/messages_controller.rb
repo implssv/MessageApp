@@ -1,6 +1,7 @@
 class MessagesController < ApplicationController
   before_action :find_message, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
+
   def index
     @messages = Message.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 9)
   end
@@ -42,13 +43,14 @@ class MessagesController < ApplicationController
   end
 
   def update
-if @message.update(message_params)
-  redirect_to message_path
-else
-  render 'edit'
+    if @message.update(message_params)
+      redirect_to message_path
+    else
+      render 'edit'
 
-end
+    end
   end
+
   private
   def message_params
     params.require(:message).permit(:title, :description)
