@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9099ce9c-54db-4945-bb35-b8f31f90abb1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/messages/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/messages/_form.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -67,8 +66,8 @@
       <file leaf-file-name="application.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="55" column="23" lean-forward="true" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
+            <state relative-caret-position="352">
+              <caret line="55" column="21" lean-forward="true" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -522,12 +521,12 @@
       <workItem from="1488215479135" duration="426000" />
       <workItem from="1488229217673" duration="6095000" />
       <workItem from="1488280879073" duration="4042000" />
-      <workItem from="1489064845451" duration="1337000" />
+      <workItem from="1489064845451" duration="1529000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38623000" />
+    <option name="totallyTimeSpent" value="38815000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -961,8 +960,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="55" column="23" lean-forward="true" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
+        <state relative-caret-position="352">
+          <caret line="55" column="21" lean-forward="true" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
           <folding />
         </state>
       </provider>
