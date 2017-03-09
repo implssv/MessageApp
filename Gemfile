@@ -18,8 +18,10 @@ gem 'simple_form', '~> 3.4'
 gem 'devise', '~> 4.2'
 gem 'faker', '~> 1.7', '>= 1.7.3'
 gem 'will_paginate', '~> 3.1', '>= 3.1.5'
+gem 'redcarpet'
 gem "font-awesome-rails"
 gem 'md_simple_editor'
+
 group :development, :test do
 
   gem 'byebug', platform: :mri
