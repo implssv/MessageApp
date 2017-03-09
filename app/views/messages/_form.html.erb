@@ -5,11 +5,9 @@
 
 
 
-    <%= md_simple_editor do %>
-    <% end %>
-    <%= md_simple_editor do %>
-    <%= f.input :description, label:"Description" %>
 
+    <%= md_simple_editor  do %>
+        <%= f.text_area :description %>
     <% end %>
 
 
