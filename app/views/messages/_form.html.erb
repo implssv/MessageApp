@@ -2,8 +2,14 @@
 
     <%= f.input :title, label:"Message Title" %>
 
-    <%= md_simple_editor  do %>
+
+
+
+    <%= md_simple_editor do %>
     <%= f.input :description, label:"Description" %>
-        <% end %>
+    <% end %>
+
+
+
     <%= f.button :submit %>
 <% end %>
