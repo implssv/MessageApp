@@ -16,4 +16,4 @@
 //= require_tree .
 //= require jquery
 //= require bootstrap-sprockets
-
+//= require md_simple_editor
