@@ -9,7 +9,7 @@
 100.times do
   Message.create([{
                       title: Faker::Commerce.product_name,
-                      description: Faker::Hipster.sentence(8, false, 4),
+                      description: Faker::Matz.quote,
                       user_id: 1
 
                   }])
