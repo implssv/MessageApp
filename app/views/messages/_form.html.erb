@@ -3,7 +3,7 @@
     <%= f.input :title, label:"Message Title" %>
     <% end %>
     <%= md_simple_editor  do %>
-    <%= f.input :description, label:"Description" %>
+    <%= f.text_area :description, label:"Description" %>
         <% end %>
     <%= f.button :submit %>
 <% end %>
