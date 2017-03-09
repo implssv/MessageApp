@@ -1,13 +1,14 @@
 <%= simple_form_for @message do |f| %>
 
-    <%= f.input :title, label:"Message Title" %>
-
-
-
-
     <%= md_simple_editor do %>
-    <%= f.input :description, label:"Description" %>
+    <%= f.input :title, label:"Message Title" %>
     <% end %>
+
+
+
+
+    <%= f.input :description, label:"Description" %>
+
 
 
 
