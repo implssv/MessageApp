@@ -9,5 +9,5 @@
 
 ### Temat: Message application
 
-MessageApp jest aplikacją pozwalającą na dodawanie wiadomości(ogłoszeń) przez użytkowników. Osoba, która chcę dodać nowe ogłoszenie w serwisie musi założyć konto. Po krótkim procesie rejestracji będzie mogła opublikowac nową wiadomość. W wiadomości użytkownik może umieścić sformatowany przez siebie tekst(w tym np. dane kontaktowe) oraz zdjęcie z dowolnego linku. Użytkownik, który utworzył wiadomość może ją po publikacji edytować oraz usunąć. MessageApp jest więc swego rodzaju serwisem ogłoszeniowym dzięki któremu każdy może ogłosić swoje usługi czy przedmioty na sprzedaż.
+MessageApp jest aplikacją pozwalającą na dodawanie wiadomości(ogłoszeń) przez użytkowników. Osoba, która chcę dodać nowe ogłoszenie w serwisie musi założyć konto. Po krótkim procesie rejestracji będzie mogła opublikowac nową wiadomość. W wiadomości użytkownik może umieścić sformatowany przez siebie tekst(w tym np. dane kontaktowe) oraz zdjęcie z dowolnego linku. Użytkownik, który utworzył wiadomość może ją po publikacji edytować oraz usunąć. MessageApp jest więc swego rodzaju serwisem ogłoszeniowym dzięki któremu każdy może ogłosić swoje usługi czy przedmioty.
 
