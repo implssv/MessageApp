@@ -9,7 +9,7 @@
 20.times do
   Message.create([{
                       title: Faker::Commerce.product_name,
-                      description: Faker::Hipster.paragraph(2, false, 4),
+                      description: Faker::Hacker.say_something_smart,
                       user_id: 1
 
                   }])
