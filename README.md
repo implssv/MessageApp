@@ -16,3 +16,14 @@ MessageApp jest aplikacją pozwalającą na dodawanie wiadomości(ogłoszeń) pr
 - redcarpet: zmienianie znaczników w tekście na kod html<br />
 - md_simple_editor: prosty edytor do wstawiania wiadomości
 
+
+<sup>Uwaga!</sup> <br />
+<sup><sup>Istnieje tylko jedno konto pozwalające na dodawanie, usuwanie, edytowanie wiadomości. Dane do zalogowania na to konto: <br />
+email: admin@admin.pl <br />
+hasło: 235244 <br />
+
+
+Przyczyną takiej sytuacji jest robienie sobie żartów przez innych studentów. <br />
+Możliwości dla jednego konta zostały ustawione w prowizoryczny sposób przez current_user.id != 1
+</sup>
+</sup>
