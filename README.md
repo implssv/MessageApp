@@ -1,4 +1,7 @@
 ## Mateusz Kacprzak (zaliczenie)
+## Mateusz Kacprzak (egzamin)
+## Grzegorz Szymanowski (egzamin)
+## Maksymilian Kicki (egzamin)
 
 | Wersja Ruby   | Wersja Rails  |                Baza danych                 | Framework |           Dodatkowe gemy           |
 | ------------- |:-------------:|:-------------------------------------------|:---------:|:----------------------------------:|
