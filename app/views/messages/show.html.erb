@@ -3,9 +3,6 @@
 <p>Posted by <%= @message.user.email %> <%= time_ago_in_words(@message.created_at)  %> ago</p>
 <div class="well"><p><%= markdown(@message.description) %></p></div>
 
-<h3>Reply to Message:</h3>
-<%= render 'comments/form' %>
-
 <% if user_signed_in? %>
 <% if @message.user.id == current_user.id %>
     <%= link_to "Edit", edit_message_path(@message), class: "btn btn-default" %>
@@ -13,3 +10,11 @@
     <% end %>
     <% end %>
 <%= link_to "Back", root_path, class: "btn btn-default" %>
+
+<h2>Comments</h2>
+
+<%= render @message.comments %>
+
+<h3>Reply to Message:</h3>
+<%= render 'comments/form' %>
+
