@@ -1,5 +1,5 @@
 class Message < ApplicationRecord
   belongs_to :user
   has_many :comments
-  has_many :categories
+  belongs_to :categories
 end

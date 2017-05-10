@@ -1,3 +1,3 @@
 class Category < ApplicationRecord
-  belongs_to :message
+  has_many :messages
 end
