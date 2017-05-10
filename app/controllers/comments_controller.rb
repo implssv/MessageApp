@@ -24,6 +24,11 @@ class CommentsController < ApplicationController
     end
   end
 
+  def destroy
+    @comment.destroy
+    redirect_to message_path(@message)
+  end
+
   private
 
     def comment_params
@@ -34,8 +39,8 @@ class CommentsController < ApplicationController
       @message = Message.find(params[:message_id])
     end
 
-  def find_comment
-    @comment = @message.comments.find(params[:id])
-  end
+    def find_comment
+      @comment = @message.comments.find(params[:id])
+    end
 
 end
