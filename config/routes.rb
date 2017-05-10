@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :messages do
     resources :comments
   end
+  resources :categories
   root 'messages#index'
   get "*path", to: redirect('/')
 end
