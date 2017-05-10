@@ -6,7 +6,7 @@
         <%= f.input :description, as: :text %>
     <% end %>
 
-    <%= collection_select(:name, :category_id, @message, :id, {:prompt => false}) %>
+    <%= f.collection_select :category_id, Category.all, :id, :name %>
 
     <%= f.button :submit %>
 <% end %>
