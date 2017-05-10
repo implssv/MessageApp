@@ -3,7 +3,6 @@ class CreateMessages < ActiveRecord::Migration[5.0]
     create_table :messages do |t|
       t.string :title
       t.text :description
-      t.references :category, foreign_key: true
       t.timestamps
     end
   end
