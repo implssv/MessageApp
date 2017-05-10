@@ -17,7 +17,7 @@ end
   Message.create([{
                       title: Faker::Commerce.product_name,
                       description: Faker::Hacker.say_something_smart,
-                      category_id: [1,2,3,4,5,6,7,8,9,10],
+                      category_id: 1,
                       user_id: 1
 
                   }])
