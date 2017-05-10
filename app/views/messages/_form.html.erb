@@ -1,15 +1,10 @@
 <%= simple_form_for @message do |f| %>
 
-
     <%= f.input :title, label:"Message Title" %>
-
-
-
 
     <%= md_simple_editor  do %>
         <%= f.input :description, as: :text %>
     <% end %>
-
 
     <%= f.button :submit %>
 <% end %>

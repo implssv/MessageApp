@@ -1,7 +1,7 @@
 <%= simple_form_for([@message, @message.comments.build]) do |f| %>
 
     <%= md_simple_editor  do %>
-        <%= f.input :content, as: :text, labell: "Comment"  %>
+        <%= f.input :content, as: :text %>
     <% end %>
 
     <%= f.button :submit %>

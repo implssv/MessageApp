@@ -15,6 +15,7 @@
 
 <%= render @message.comments %>
 
-<h3>Reply to Message:</h3>
+<% if user_signed_in? %>
+<h3>Comment a message</h3>
 <%= render 'comments/form' %>
-
+<% end %>
