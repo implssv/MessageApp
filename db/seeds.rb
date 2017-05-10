@@ -6,10 +6,18 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+
+10.times do
+  Category.create([{
+                      name: Faker::Ancient.titan
+                  }])
+end
+
 20.times do
   Message.create([{
                       title: Faker::Commerce.product_name,
                       description: Faker::Hacker.say_something_smart,
+                      category_id: Faker::Config.random = Random.new(10),
                       user_id: 1
 
                   }])
