@@ -1,9 +1,13 @@
 class CategoriesController < ApplicationController
-  before_action :find_category, except: [:index]
+  before_action :find_category, except: [:index, :new]
 
 
   def index
     @categories = Category.all.paginate(:page => params[:page], :per_page => 9)
+  end
+
+  def new
+      render 'new'
   end
 
 
