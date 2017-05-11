@@ -1,0 +1,17 @@
+<div class="row-flex row-flex-wrap">
+  <% @categories.each do |m| %>
+
+      <div class="col-md-4" style="background: gainsboro;border:3px solid white">
+        <div class="col-sm-12" style="word-wrap: break-word; ">
+          <div class="col-sm-12">
+            <h2><%= m.name %></h2>
+          </div>
+          <%= link_to "View category", category_path(m), class: "btn btn-default btn-sm pull-right", style: "margin-bottom:5px;"%>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+  <% end %>
+</div>
+<div class="row">
+  <%= will_paginate @categories %>
+</div>

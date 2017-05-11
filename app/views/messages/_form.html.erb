@@ -6,7 +6,8 @@
         <%= f.input :description, as: :text %>
     <% end %>
 
+    <div>
     <%= f.collection_select :category_id, Category.all, :id, :name %>
-
+    </div>
     <%= f.button :submit %>
 <% end %>
