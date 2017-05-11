@@ -1,0 +1,12 @@
+
+<h2><span class="glyphicon glyphicon-envelope"></span> <%=  @category.name %></h2>
+
+<% if user_signed_in? %>
+    <% if @message.user.id == current_user.id %>
+        <%= link_to "Edit", edit_category_path(@category), class: "btn btn-default" %>
+        <%= link_to "Delete", category_path(@category), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default" %>
+    <% end %>
+<% end %>
+<%= link_to "Back", root_path, class: "btn btn-default" %>
+
+<h2>Comments</h2>
