@@ -28,8 +28,8 @@
       <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
       <% else %>
           <li><%= link_to "Log in", new_user_session_path %></li>
-          <li><%= link_to "Categories", 'categories#index' %></li>
       <% end %>
+      <li><%= link_to "Categories", 'categories#index' %></li>
     </ul>
     <% if user_signed_in? %>
 
