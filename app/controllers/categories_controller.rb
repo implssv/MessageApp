@@ -10,7 +10,7 @@ class CategoriesController < ApplicationController
     if current_user.id != 1
       redirect_to root_path
     else
-      redirect_to 'categories#create'
+      render 'new'
     end
 
     end
