@@ -4,7 +4,7 @@
 
 <p>Posted by <%= @message.user.email %> <%= time_ago_in_words(@message.created_at)  %> ago</p>
 <div class="well"><p><%= markdown(@message.description) %></p></div>
-
+<p><%= image_tag @message.cover.url  if @message.cover? %></p>
 <% if user_signed_in? %>
 <% if @message.user.id == current_user.id %>
     <%= link_to "Edit", edit_message_path(@message), class: "btn btn-default" %>
