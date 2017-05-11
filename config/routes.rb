@@ -5,6 +5,5 @@ Rails.application.routes.draw do
   end
   resources :categories
   root 'messages#index'
-
   get "*path", to: redirect('/')
 end
