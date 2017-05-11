@@ -7,7 +7,7 @@ class CategoriesController < ApplicationController
   end
 
   def new
-      render 'new'
+      @category = Category.new
   end
 
   def show
