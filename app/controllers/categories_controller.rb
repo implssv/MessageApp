@@ -6,7 +6,7 @@ class CategoriesController < ApplicationController
     @categories = Category.all.paginate(:page => params[:page], :per_page => 9)
   end
 
-  def new_action
+  def new
       render 'new'
   end
 
