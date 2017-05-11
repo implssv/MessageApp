@@ -6,14 +6,6 @@ class CategoriesController < ApplicationController
     @categories = Category.all.paginate(:page => params[:page], :per_page => 9)
   end
 
-  def new
-    if current_user.id != 1
-      redirect_to root_path
-    else
-      render 'new'
-    end
-
-    end
 
   def create
 
