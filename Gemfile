@@ -22,6 +22,9 @@ gem 'jquery-turbolinks'
 gem 'redcarpet'
 gem "font-awesome-rails"
 gem 'md_simple_editor'
+gem 'carrierwave', '~> 1.0'
+gem "mini_magick"
+
 
 group :development, :test do
 
