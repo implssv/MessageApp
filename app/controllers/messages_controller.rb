@@ -14,7 +14,7 @@ class MessagesController < ApplicationController
     @search = Message.search do
       title params[:search]
     end
-    @messages = @search.results.order("created_at DESC").paginate(:page => params[:page], :per_page => 9)
+    @messages = @search.results
   end
 
   def show
