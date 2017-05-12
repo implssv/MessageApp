@@ -10,6 +10,13 @@ class MessagesController < ApplicationController
     @messages = Message.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 9)
   end
 
+  def search
+    @search = Message.search do
+      title params[:search]
+    end
+    @messages = @search.results.order("created_at DESC").paginate(:page => params[:page], :per_page => 9)
+  end
+
   def show
 
   end
