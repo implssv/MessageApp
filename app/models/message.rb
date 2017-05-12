@@ -4,7 +4,7 @@ class Message < ApplicationRecord
   belongs_to :category
   mount_uploader :cover, CoverUploader
 
-  attr_accessor :cover
+  #attr_accessor :cover
 
   after_save :save_cover_image, if:cover
 
