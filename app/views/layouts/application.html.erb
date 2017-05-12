@@ -20,15 +20,7 @@
       <%= link_to "Message Application", root_path, class: "navbar-brand" %>
     </div>
 
-    <form class="navbar-form navbar-left">
-      <%= form_tag messages_path, :method => :get do %>
-          <div class="form-group">
-            <%= text_field_tag :search, params[:search] %>
-          </div>
-          <%= submit_tag "Search", :name => nil %>
-      <% end %>
 
-    </form>
 
     <ul class="nav navbar-nav">
 
