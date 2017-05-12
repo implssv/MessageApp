@@ -8,7 +8,7 @@ class MessagesController < ApplicationController
   def index
 
     if(params.has_key?(:search))
-      @messages = find(:all, :conditions => ['title LIKE ?', "%#{params[:search]}%"])
+      @messages = Message.all.find(:conditions => ['title LIKE ?', "%#{params[:search]}%"])
     else
       @messages = Message.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 9)
     end
