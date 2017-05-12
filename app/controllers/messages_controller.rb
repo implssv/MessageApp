@@ -8,7 +8,7 @@ class MessagesController < ApplicationController
   def index
 
     if(params.has_key?(:search))
-      @messages = Message.search(params[:search])
+      @messages = search(params[:search])
     else
       @messages = Message.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 9)
     end
