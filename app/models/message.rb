@@ -14,7 +14,7 @@ class Message < ApplicationRecord
   #   folder = "public/messages/#{id}/cover"
   #
   #   FileUtils::mkdir_p folder
-  # 
+  #
   #   f = File.open File.join(folder, filename), "wb"
   #   f.write cover.read()
   #   f.close
