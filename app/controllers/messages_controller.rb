@@ -3,12 +3,12 @@ class MessagesController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show, :search]
 
 
-
+  #@messages = search(params[:search])
 
   def index
 
     if(params.has_key?(:search))
-      @messages = search(params[:search])
+      @messages = find(:all, :conditions => ['title LIKE ?', "%#{params[:search]}%"])
     else
       @messages = Message.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 9)
     end
@@ -20,7 +20,7 @@ class MessagesController < ApplicationController
 
   def self.search(search)
     if search
-      find(:all, :conditions => ['title LIKE ?', "%#{search}%"])
+
     else
       find(:all)
     end
