@@ -3,7 +3,11 @@ class MessagesController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
 
   def index
-    @messages = Message.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 9)
+    @search = Message.search do
+      title params[:search]
+    end
+    @messages = @search.results.order("created_at DESC").paginate(:page => params[:page], :per_page => 9)
+   # @messages = Message.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 9)
   end
 
   def show
