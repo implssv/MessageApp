@@ -3,14 +3,12 @@ class MessagesController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show, :search]
 
   def index
-    @messages = Message.where(["title LIKE ?", "%#{params[:search]}"])
+
+    @messages = Message.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 9)
   end
 
   def search
-    @search = Message.search do
-      fulltext params[:search]
-    end
-    @messages = @search.results
+    @messages = Message.where(["title LIKE ?", "%#{params[:search]}"])
   end
 
   def show
