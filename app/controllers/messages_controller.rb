@@ -2,14 +2,32 @@ class MessagesController < ApplicationController
   before_action :find_message, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show, :search]
 
+
+
+
   def index
-
-    @messages = Message.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 9)
+    @messages = Message.search(params[:search])
   end
 
-  def search
-    @messages = Message.where(["title LIKE ?", "%#{params[:search]}"])
+
+
+  def self.search(search)
+    if search
+      find(:all, :conditions => ['title LIKE ?', "%#{search}%"])
+    else
+      find(:all)
+    end
   end
+
+
+
+  # def index
+  #   @messages = Message.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 9)
+  # end
+  #
+  # def search
+  #   @messages = Message.where(["title LIKE ?", "%#{params[:search]}"])
+  # end
 
   def show
 
