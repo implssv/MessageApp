@@ -18,7 +18,7 @@ end
                       title: Faker::Commerce.product_name,
                       description: Faker::Hacker.say_something_smart,
                       category_id: Faker::Base::rand_in_range(1, 10),
-                      cover: open(Faker::Avatar.image),
+                      cover: 'https://robohash.org/sitsequiquia.png?size=300x300',
                       user_id: 1
 
                   }])
