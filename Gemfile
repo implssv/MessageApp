@@ -25,8 +25,6 @@ gem 'md_simple_editor'
 gem 'carrierwave', '~> 1.0'
 gem 'mini_magick'
 gem 'fog'
-gem 'sunspot_rails'
-gem 'sunspot_solr'
 
 group :development, :test do
 

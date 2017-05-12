@@ -4,10 +4,6 @@ class Message < ApplicationRecord
   belongs_to :category
   mount_uploader :cover, CoverUploader
 
-  searchable do
-    text :title
-  end
-
   validates_integrity_of  :cover
   validates_processing_of :cover
 
