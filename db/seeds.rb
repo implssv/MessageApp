@@ -18,7 +18,7 @@ end
                       title: Faker::Commerce.product_name,
                       description: Faker::Hacker.say_something_smart,
                       category_id: Faker::Base::rand_in_range(1, 10),
-                      cover: Faker::Avatar.image,
+                      cover: open(Faker::Avatar.image),
                       user_id: 1
 
                   }])
