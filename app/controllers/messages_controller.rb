@@ -3,10 +3,7 @@ class MessagesController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show, :search]
 
   def index
-    @search = Message.search do
-      fulltext params[:search]
-    end
-    @messages = @search.results
+    @messages = Message.where(["title LIKE ?", "%#{params[:search]}"])
   end
 
   def search
