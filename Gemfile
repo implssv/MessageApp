@@ -25,6 +25,7 @@ gem 'md_simple_editor'
 gem 'carrierwave', '~> 1.0'
 gem 'mini_magick'
 gem 'fog'
+gem 'search_cop'
 
 group :development, :test do
 
