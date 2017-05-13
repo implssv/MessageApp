@@ -20,21 +20,3 @@
     <% end %>
     <% end %>
 <%= link_to "Back", root_path, class: "btn btn-default" %>
-<section class="comments">
-<h2>Comments</h2>
-
-<%= render @message.comments %>
-
-
-
-
-<% if user_signed_in? %>
-<h3>Comment a message</h3>
-<%= render 'comments/form' %>
-<% end %>
-
-
-
-
-
-</section>
