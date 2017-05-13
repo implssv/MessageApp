@@ -26,6 +26,7 @@ gem 'carrierwave', '~> 1.0'
 gem 'mini_magick'
 gem 'fog'
 gem 'search_cop'
+gem 'gravatarify', '~> 3.0.0'
 
 group :development, :test do
 
