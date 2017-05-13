@@ -1,18 +1,30 @@
-<div class="row-flex row-flex-wrap">
-<% @messages.each do |m| %>
+<div class="container">
+  <div class="row">
+    <% @messages.each do |m| %>
+    <div class="col-sm-4">
+      <div class="news">
+        <div class="img-figure">
+          <div class="cat">m.category</div>
+          <img src="http://136.243.1.253/~creolitic/bootsnipp/fashion.jpg" class="img-responsive">
+        </div>
 
-    <div class="col-md-4" style="background: gainsboro;border:3px solid white">
-<div class="col-sm-12" style="word-wrap: break-word; ">
-<div class="col-sm-12">
-    <h2><%= m.title %></h2>
+        <div class="title">
+          <h1><%= m.title %></h1>
+        </div>
+        <p class="description">
+          If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden...
+        </p>
 
-</div>
-    <%= link_to "View Message", message_path(m), class: "btn btn-default btn-sm pull-right", style: "margin-bottom:5px;"%>
-  <div class="clearfix"></div>
-</div>
+        <p class="more">
+          <a href="#">read more</a><i class="fa fa-angle-right" aria-hidden="true"></i>
+        </p>
+      </div>
+
+
     </div>
-<% end %>
+    <% end %>
+  </div>
 </div>
-<div class="row">
-<%= will_paginate @messages %>
-</div>
+      <div class="row">
+        <%= will_paginate @messages %>
+      </div>
