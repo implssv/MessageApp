@@ -4,7 +4,7 @@
   </a>
   <div class="comment-body">
     <div class="text">
-      <p><%= comment.content %></p>
+      <p><%= markdown(comment.content) %></p>
     </div>
     <p class="attribution">by <a href="#non"><%= comment.user.email %></a> <%= time_ago_in_words(comment.created_at) %> ago</p>
     <% if user_signed_in? %>
