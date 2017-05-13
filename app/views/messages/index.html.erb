@@ -1,18 +1,32 @@
-<div class="row-flex row-flex-wrap">
-<% @messages.each do |m| %>
+<div class="container">
+  Messages
+  <div class="row">
+    <% @messages.each do |m| %>
+    <div class="col-sm-4" style="margin-top:10px;">
+      <div class="news">
+        <div class="img-figure">
+          <div class="cat"><%= m.category.name %></div>
+          <img src="http://136.243.1.253/~creolitic/bootsnipp/fashion.jpg" class="img-responsive">
+        </div>
 
-    <div class="col-md-4" style="background: gainsboro;border:3px solid white">
-<div class="col-sm-12" style="word-wrap: break-word; ">
-<div class="col-sm-12">
-    <h2><%= m.title %></h2>
+        <div class="title">
+          <h1><%= m.title %></h1>
+        </div>
+        <p class="description">
+          <%= truncate(message.description, length:5) %>
+        </p>
 
-</div>
-    <%= link_to "View Message", message_path(m), class: "btn btn-default btn-sm pull-right", style: "margin-bottom:5px;"%>
-  <div class="clearfix"></div>
-</div>
+        <p class="more">
+          <%= link_to "Read more", message_path(m), class: "fa fa-angle-right"%>
+
+        </p>
+      </div>
+
+
     </div>
-<% end %>
+    <% end %>
+  </div>
 </div>
-<div class="row">
-<%= will_paginate @messages %>
-</div>
+      <div class="row">
+       <div style="text-align:center"> <%= will_paginate @messages %></div>
+      </div>
