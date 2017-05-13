@@ -2,7 +2,7 @@
 <h2><span class="glyphicon glyphicon-envelope"></span> <%=  @message.title %></h2>
 <h4>Category: <%= @message.category.name %></h4>
 
-<p>Posted by <%= gravatar_tag @user.email, :size => 10 %> <%= @message.user.email %> <%= time_ago_in_words(@message.created_at)  %> ago</p>
+<p>Posted by <%= gravatar_tag @message.user.email, :size => 10 %> <%= @message.user.email %> <%= time_ago_in_words(@message.created_at)  %> ago</p>
 <div class="well">
   <p><%= image_tag @message.cover  if @message.cover? %></p>
 
