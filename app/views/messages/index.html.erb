@@ -13,11 +13,12 @@
           <h1><%= m.title %></h1>
         </div>
         <p class="description">
-          If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden...
+          <%= truncate(message.description, length:5) %>
         </p>
 
         <p class="more">
-          <a href="#">read more</a><i class="fa fa-angle-right" aria-hidden="true"></i>
+          <%= link_to "Read more", message_path(m), class: "fa fa-angle-right"%>
+
         </p>
       </div>
 
@@ -27,5 +28,5 @@
   </div>
 </div>
       <div class="row">
-        <%= will_paginate @messages %>
+       <div style="text-align:center"> <%= will_paginate @messages %></div>
       </div>
