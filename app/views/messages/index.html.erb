@@ -6,7 +6,7 @@
       <div class="news">
         <div class="img-figure">
           <div class="cat"><%= m.category.name %></div>
-          <%= image_tag @message.cover, class: "img-responsive"  if @message.cover? %>
+          <%= image_tag m.cover, class: "img-responsive"  if @message.cover? %>
         </div>
 
         <div class="title">
