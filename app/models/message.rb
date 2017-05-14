@@ -2,7 +2,7 @@ class Message < ApplicationRecord
   include SearchCop
 
   search_scope :search do
-    attributes :title
+    attributes :title, :description
   end
 
   belongs_to :user

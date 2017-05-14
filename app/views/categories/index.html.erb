@@ -6,7 +6,10 @@
           <div class="col-sm-12">
             <h2><%= m.name %></h2>
           </div>
-          <%= link_to "View category", category_path(m), method: :get, class: "btn btn-default btn-sm pull-right", style: "margin-bottom:5px;"%>
+          <%= form_tag messages_path, :method => 'get' do %>
+              <%= hidden_field_tag m.category, params[:category] %>
+          <%= submit_tag "View messages", class: "btn btn-default btn-sm pull-right", style: "margin-bottom:5px;"%>
+          <% end %>
           <div class="clearfix"></div>
         </div>
       </div>
