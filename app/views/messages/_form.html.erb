@@ -12,7 +12,8 @@
 
     <p>
       <%= f.label :cover %>
-      <%= f.input :cover, as: :file %>
+      <%= f.file_field(:cover) %>
+      <%= f.hidden_field(:cover_cache) %>
     </p>
 
 

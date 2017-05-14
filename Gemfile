@@ -27,6 +27,7 @@ gem 'search_cop'
 gem 'fog'
 gem 'carrierwave'
 gem 'gravatarify', '~> 3.0.0'
+gem 'cloudinary'
 
 group :development, :test do
 
