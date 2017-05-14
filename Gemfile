@@ -23,7 +23,6 @@ gem 'redcarpet'
 gem "font-awesome-rails"
 gem 'md_simple_editor'
 gem 'mini_magick'
-gem "paperclip", "~> 5.0.0"
 gem 'search_cop'
 gem 'fog'
 gem 'carrierwave'
