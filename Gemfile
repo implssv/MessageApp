@@ -22,9 +22,8 @@ gem 'jquery-turbolinks'
 gem 'redcarpet'
 gem "font-awesome-rails"
 gem 'md_simple_editor'
-gem 'carrierwave', '~> 1.0'
 gem 'mini_magick'
-gem 'fog'
+gem "paperclip", "~> 5.0.0"
 gem 'search_cop'
 gem 'gravatarify', '~> 3.0.0'
 
