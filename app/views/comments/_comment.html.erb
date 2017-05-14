@@ -1,9 +1,17 @@
-<p><%= comment.content %></p>
-<p>Posted by <%= comment.user.email %> <%= time_ago_in_words(comment.created_at) %> ago</p>
-
-<% if user_signed_in? %>
-  <% if comment.user_id = current_user.id %>
-  <%= link_to "Edit", edit_message_comment_path(comment.message, comment) %>
-  <%= link_to "Delete", message_comment_path(comment.message, comment), method: :delete, data: { confirm: "Are you sure?" } %>
-  <% end %>
-<% end %>
+<article class="comment">
+  <a class="comment-img" href="#non">
+    <%= gravatar_tag comment.user.email, :size => 50 %>
+  </a>
+  <div class="comment-body">
+    <div class="text">
+      <p><%= markdown(comment.content) %></p>
+    </div>
+    <p class="attribution">by <a href="#non"><%= comment.user.email %></a> <%= time_ago_in_words(comment.created_at) %> ago</p>
+    <% if user_signed_in? %>
+        <% if comment.user_id = current_user.id %>
+            <%= link_to "Edit", edit_message_comment_path(comment.message, comment) %>
+            <%= link_to "Delete", message_comment_path(comment.message, comment), method: :delete, data: { confirm: "Are you sure?" } %>
+        <% end %>
+    <% end %>
+  </div>
+</article>
