@@ -19,7 +19,7 @@ end
                       description: Faker::Hacker.say_something_smart,
                       category_id: Faker::Base::rand_in_range(1, 10),
                       user_id: 1,
-                      cover: Rails.root.join("db/images/"+Faker::Base::rand_in_range(1, 10)+".jpg").open
+                      cover: Image.new remote_photos_url: 'http://images.all-free-download.com/images/graphiclarge/ruby_312068.jpg', recipe_id: n
 
                   }])
 end
