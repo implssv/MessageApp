@@ -19,7 +19,7 @@ end
                       description: Faker::Hacker.say_something_smart,
                       category_id: Faker::Base::rand_in_range(1, 10),
                       user_id: 1,
-                      cover: 'http://palmgamerstore.com/wp-content/uploads/2016/10/car-mechanic-simulator-2015-29060.jpg'
+                      cover: File.open('http://images.all-free-download.com/images/graphiclarge/ruby_312068.jpg')
 
                   }])
 end
