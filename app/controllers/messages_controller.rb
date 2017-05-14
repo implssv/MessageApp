@@ -8,7 +8,7 @@ class MessagesController < ApplicationController
       elseif(params.has_key?(:id))
        @category = Category.find(params[:id])
 
-       @messages = Message.joins(:category).where('category.name = ?', @category.name).order("created_at DESC").paginate(:page => params[:page], :per_page => 9)
+       @messages = Message.joins(:categories).where('category.name = ?', @category.name).order("created_at DESC").paginate(:page => params[:page], :per_page => 9)
     else
       @messages = Message.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 9)
     end

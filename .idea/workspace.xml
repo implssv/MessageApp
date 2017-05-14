@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9099ce9c-54db-4945-bb35-b8f31f90abb1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/messages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/categories/index.html.erb" afterPath="$PROJECT_DIR$/app/views/categories/index.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -519,12 +518,12 @@
       <workItem from="1494622453464" duration="3871000" />
       <workItem from="1494709514699" duration="12513000" />
       <workItem from="1494778865923" duration="4328000" />
-      <workItem from="1494787239956" duration="603000" />
+      <workItem from="1494787239956" duration="776000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121793000" />
+    <option name="totallyTimeSpent" value="121966000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
