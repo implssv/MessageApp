@@ -9,7 +9,7 @@
 
 10.times do
   Category.create([{
-                      name: Faker::Ancient.titan
+                      name: Faker::Hacker.noun
                   }])
 end
 
@@ -18,7 +18,7 @@ end
                       title: Faker::Commerce.product_name,
                       description: Faker::Hacker.say_something_smart,
                       category_id: Faker::Base::rand_in_range(1, 10),
-                      cover: File.open(File.join(Rails.root, Faker::Base::rand_in_range(1, 10)+".jpg" )),
+                      cover: File.open(File.join(Rails.root, '1.jpg' )),
                       user_id: 1
 
                   }])
