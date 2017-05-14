@@ -97,7 +97,7 @@
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="147">
-              <caret line="76" column="56" lean-forward="false" selection-start-line="76" selection-start-column="56" selection-end-line="76" selection-end-column="56" />
+              <caret line="76" column="66" lean-forward="false" selection-start-line="76" selection-start-column="66" selection-end-line="76" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -508,12 +508,12 @@
       <workItem from="1494609431409" duration="3486000" />
       <workItem from="1494615668427" duration="598000" />
       <workItem from="1494622453464" duration="3871000" />
-      <workItem from="1494709514699" duration="11250000" />
+      <workItem from="1494709514699" duration="11526000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115599000" />
+    <option name="totallyTimeSpent" value="115875000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -947,7 +947,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
-          <caret line="76" column="56" lean-forward="false" selection-start-line="76" selection-start-column="56" selection-end-line="76" selection-end-column="56" />
+          <caret line="76" column="66" lean-forward="false" selection-start-line="76" selection-start-column="66" selection-end-line="76" selection-end-column="66" />
           <folding />
         </state>
       </provider>
