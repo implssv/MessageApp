@@ -5,6 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+auth = {
+    cloud_name:  "dymyyh3bj",
+    api_key:  "366627257786553",
+    api_secret:  "l3KQLgQrQkCTfBM2rCH2ypksYZo"
+}
 
 
 10.times do
@@ -19,7 +24,7 @@ end
                       description: Faker::Hacker.say_something_smart,
                       category_id: Faker::Base::rand_in_range(1, 10),
                       user_id: 1,
-                      cover: open(Faker::Avatar.image)
+                      cover: Cloudinary::Uploader.upload(Faker::Base::rand_in_range(1, 10) << ".jpg", auth)
                       #cover: 'http://res.cloudinary.com/dymyyh3bj/image/upload/v1494801281/' << Faker::Base::rand_in_range(1, 10) << '.jpg'
 
                   }])
