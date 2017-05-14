@@ -5,9 +5,9 @@ class MessagesController < ApplicationController
   def index
     if(params.has_key?(:search))
       @messages = Message.search(params[:search]).paginate(:page => params[:page], :per_page => 9)
-      elseif(params.has_key?(:id))
+    elseif(params.has_key?(:id))
 
-       @messages = Message.joins(:categories).where('category.id = ?', params[:id]).order("created_at DESC").paginate(:page => params[:page], :per_page => 9)
+       @messages = Message.joins(:categories).where('categories.id = ?', params[:id]).order("created_at DESC").paginate(:page => params[:page], :per_page => 9)
     else
       @messages = Message.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 9)
     end
