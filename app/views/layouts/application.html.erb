@@ -32,9 +32,9 @@
       <ul class="nav navbar-nav">
         <% if !user_signed_in? %>
             <li><%= link_to "Sign up", new_user_registration_path %> </li>
-            <li><%= link_to "Log in", new_user_session_path %></li>
-        <% end %>
 
+
+<% end %>
 
         <li><%= link_to "Categories", categories_path %></li>
         <% if user_signed_in? %>
@@ -64,12 +64,17 @@
             <%= submit_tag "Search", :name => nil,  class: "btn btn-default btn-sm" %>
         <% end %>
 
-        </form>
+
       </div>
       <ul class="nav navbar-nav navbar-right">
+        <% if user_signed_in? %>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Panel<b class="caret"></b></a>
           <ul class="dropdown-menu">
+
+            <li><% @user.email %></li>
+
+            <li class="divider"></li>
 
             <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
 
@@ -77,9 +82,12 @@
 
           </ul>
         </li>
+            <% end %>
 
+        <% if !user_signed_in? %>
+        <li><%= link_to "Log in", new_user_session_path %></li>
 
-
+        <% end %>
 
       </ul>
     </div><!-- /.navbar-collapse -->
