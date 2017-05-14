@@ -6,7 +6,7 @@
       <div class="news">
         <div class="img-figure">
           <div class="cat"><%= m.category.name %></div>
-          <img src="http://136.243.1.253/~creolitic/bootsnipp/fashion.jpg" class="img-responsive">
+          <%= image_tag m.cover, class: "img-responsive"  if @message.cover? %>
         </div>
 
         <div class="title">
