@@ -4,7 +4,7 @@ class MessagesController < ApplicationController
 
   def index
     puts "XDDD"
-    puts params[:id]
+    puts params[:param1]
 
     if(params.has_key?(:search))
       @messages = Message.search(params[:search]).paginate(:page => params[:page], :per_page => 9)
