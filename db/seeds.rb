@@ -23,3 +23,12 @@ end
 
                   }])
 end
+
+
+30.times do
+  Comment.create([{
+                      content: Faker::Hacker.say_something_smart,
+                      message_id: Faker::Base::rand_in_range(1, 20),
+                      user_id: 1
+                  }])
+end
