@@ -7,7 +7,7 @@
 
 | Wersja Ruby   | Wersja Rails  |                Baza danych                 | Framework |           Dodatkowe gemy           |
 | ------------- |:-------------:|:-------------------------------------------|:---------:|:----------------------------------:|
-| 2.4.0        | 5.0.2         | SQLite - lokalnie<br />PostgreSQL - Heroku | Bootstrap | simple_form, redcarpet, md_simple_editor, search_cop, gravatarify |
+| 2.4.0        | 5.0.2         | SQLite - lokalnie<br />PostgreSQL - Heroku | Bootstrap | simple_form, redcarpet, md_simple_editor, search_cop, gravatarify, carrierwave, mini_magick |
 
 
 :white_check_mark: [link do wdrożonej na zewnętrznym serwerze aplikacji](http://serene-spire-89656.herokuapp.com)
@@ -22,6 +22,8 @@ MessageApp jest aplikacją pozwalającą na dodawanie wiadomości(ogłoszeń) pr
 - md_simple_editor: prosty edytor do wstawiania wiadomości
 - search_cop: gem służący do wyszukiwania wiadomości
 - gravatarify: tworzenie unikalnych avatarów na podstawie adresu email w portalu gravarity
+- carrierwave: gem pozwalający na dodawanie zdjęć
+- mini_magick: pozwala na skalowanie dodanych zdjęć
 
 
 
