@@ -6,10 +6,9 @@ class MessagesController < ApplicationController
     if(params.has_key?(:search))
       @messages = Message.search(params[:search]).paginate(:page => params[:page], :per_page => 9)
       elseif(params.has_key?(:id))
-        message = Message.find(params[:id])
-        category = message.category
+       @category = Category.find(params[:id])
 
-       @messages = Message.joins(:category).where('category.name = ?', category).order("created_at DESC").paginate(:page => params[:page], :per_page => 9)
+       @messages = Message.joins(:category).where('category.name = ?', @category.name).order("created_at DESC").paginate(:page => params[:page], :per_page => 9)
     else
       @messages = Message.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 9)
     end
@@ -64,4 +63,5 @@ class MessagesController < ApplicationController
   def find_message
     @message = Message.find(params[:id])
   end
+
 end
