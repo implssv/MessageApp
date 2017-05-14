@@ -3,6 +3,9 @@ class MessagesController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show, :search]
 
   def index
+
+    puts params
+
     if(params.has_key?(:search))
       @messages = Message.search(params[:search]).paginate(:page => params[:page], :per_page => 9)
     elsif(params.has_key?(:id))
