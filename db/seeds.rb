@@ -19,7 +19,7 @@ end
                       description: Faker::Hacker.say_something_smart,
                       category_id: Faker::Base::rand_in_range(1, 10),
                       user_id: 1,
-                      cover: File.open(File.join(Rails.root, '/app/assets/images/1.jpg'))
+                      cover: 'http://palmgamerstore.com/wp-content/uploads/2016/10/car-mechanic-simulator-2015-29060.jpg'
 
                   }])
 end
