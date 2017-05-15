@@ -4,7 +4,7 @@
 
 <p>Posted by <%= gravatar_tag @message.user.email, :size => 10 %> <%= @message.user.email %> <%= time_ago_in_words(@message.created_at)  %> ago</p>
 <div class="well">
-  <p><%= image_tag @message.cover  if @message.cover? %></p>
+  <p> <%= cl_image_tag(@message.cover, :width => 100, :height => 150)  %></p>
 
 
   <p><%= markdown(@message.description) %></p>
