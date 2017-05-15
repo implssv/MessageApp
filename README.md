@@ -7,7 +7,7 @@
 
 | Wersja Ruby   | Wersja Rails  |                Baza danych                 | Framework |           Dodatkowe gemy           |
 | ------------- |:-------------:|:-------------------------------------------|:---------:|:----------------------------------:|
-| 2.4.0        | 5.0.2         | SQLite - lokalnie<br />PostgreSQL - Heroku | Bootstrap | simple_form, redcarpet, md_simple_editor, search_cop, gravatarify, carrierwave, mini_magick |
+| 2.4.0        | 5.0.2         | SQLite - lokalnie<br />PostgreSQL - Heroku | Bootstrap | simple_form, redcarpet, md_simple_editor, search_cop, gravatarify, carrierwave, mini_magick, cloudinary |
 
 
 :white_check_mark: [link do wdrożonej na zewnętrznym serwerze aplikacji](http://serene-spire-89656.herokuapp.com)
