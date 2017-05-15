@@ -18,10 +18,8 @@ end
                       description: Faker::Hacker.say_something_smart,
                       category_id: Faker::Base::rand_in_range(1, 10),
                       user_id: 1,
-                      remote_cover_url: 'http://www.jewelinfo4u.com/images/Gallery/ruby.jpg'           
-    #cover: Cloudinary::Uploader.upload(Faker::Base::rand_in_range(1, 10) << '.jpg')
-                      #cover: 'http://res.cloudinary.com/dymyyh3bj/image/upload/v1494801281/' << Faker::Base::rand_in_range(1, 10) << '.jpg'
-
+                      remote_cover_url: 'http://res.cloudinary.com/dymyyh3bj/image/upload/v1494801302/' + Faker::Base::rand_in_range(1, 10) + ".jpg"       
+  
                   }])
 end
 
