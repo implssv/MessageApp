@@ -18,7 +18,7 @@ end
                       description: Faker::Hacker.say_something_smart,
                       category_id: Faker::Base::rand_in_range(1, 10),
                       user_id: 1,
-                      cover: Cloudinary::Uploader.upload('#{RAILS_ROOT}/db/images/' + Faker::Base::rand_in_range(1, 10) + '.jpg'.to_i)
+                      cover: Cloudinary::Uploader.upload(('#{RAILS_ROOT}/db/images/' + Faker::Base::rand_in_range(1, 10) + '.jpg').to_s)
                       #cover: 'http://res.cloudinary.com/dymyyh3bj/image/upload/v1494801281/' << Faker::Base::rand_in_range(1, 10) << '.jpg'
 
                   }])
