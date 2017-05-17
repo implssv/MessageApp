@@ -55,7 +55,7 @@ class MessagesController < ApplicationController
 
   private
   def message_params
-    params.require(:message).permit(:title, :description, :cover)
+    params.require(:message).permit(:title, :description,:category, :cover)
   end
 
   def find_message
