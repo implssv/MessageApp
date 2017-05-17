@@ -24,6 +24,7 @@ MessageApp jest aplikacją pozwalającą na dodawanie wiadomości(ogłoszeń) pr
 - gravatarify: tworzenie unikalnych avatarów na podstawie adresu email w portalu gravarity
 - carrierwave: gem pozwalający na dodawanie zdjęć
 - mini_magick: pozwala na skalowanie dodanych zdjęć
+- cloudinary: gem służący do obsługi chmury gdzie znajdują się obrazki
 
 
 
